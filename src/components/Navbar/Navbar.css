@@ -1,0 +1,126 @@
+/* Navbar Styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    z-index: 1000;
+    transition: box-shadow var(--transition-base);
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+/* Logo */
+.navbar-logo {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 2px;
+}
+
+.logo-text {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-charcoal-black);
+    letter-spacing: -0.02em;
+    transition: color var(--transition-base);
+}
+
+.logo-subtitle {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-muted);
+    font-style: italic;
+    letter-spacing: 0.02em;
+}
+
+.navbar-logo:hover .logo-text {
+    color: var(--color-deep-blue-grey);
+}
+
+/* Navigation Menu */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-3xl);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    position: relative;
+    padding: var(--spacing-sm) 0;
+    transition: color var(--transition-base);
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    font-size: var(--font-size-xs);
+}
+
+.navbar-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-deep-blue-grey);
+    transition: width var(--transition-base);
+}
+
+.navbar-link:hover {
+    color: var(--color-charcoal-black);
+}
+
+.navbar-link:hover::after,
+.navbar-link.active::after {
+    width: 100%;
+}
+
+.navbar-link.active {
+    color: var(--color-charcoal-black);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-menu {
+        gap: var(--spacing-xl);
+    }
+
+    .logo-text {
+        font-size: var(--font-size-lg);
+    }
+
+    .logo-subtitle {
+        font-size: 0.625rem;
+    }
+
+    .navbar-link {
+        font-size: 0.625rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+        align-items: flex-start;
+    }
+
+    .navbar-menu {
+        gap: var(--spacing-lg);
+        flex-wrap: wrap;
+    }
+}

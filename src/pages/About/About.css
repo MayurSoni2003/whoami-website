@@ -1,0 +1,270 @@
+/* About Page Styles */
+.about-page {
+    min-height: 100vh;
+    padding: var(--spacing-4xl) 0;
+}
+
+/* Hero Section */
+.about-hero {
+    text-align: center;
+    padding: var(--spacing-5xl) 0 var(--spacing-4xl);
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: var(--spacing-5xl);
+}
+
+.about-hero h1 {
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-charcoal-black);
+    margin-bottom: var(--spacing-lg);
+    letter-spacing: -0.02em;
+}
+
+.about-tagline {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-secondary);
+    font-style: italic;
+    margin: 0;
+}
+
+/* Sections */
+.about-section {
+    margin-bottom: var(--spacing-5xl);
+}
+
+.about-section h2 {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-charcoal-black);
+    margin-bottom: var(--spacing-2xl);
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Values Section */
+.values-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3xl);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.value-item {
+    display: flex;
+    gap: var(--spacing-2xl);
+    padding: var(--spacing-2xl);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.value-item:hover {
+    transform: translateX(8px);
+    box-shadow: var(--shadow-md);
+}
+
+.value-icon {
+    font-size: var(--font-size-4xl);
+    color: var(--color-deep-blue-grey);
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-content h3 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-charcoal-black);
+    margin-bottom: var(--spacing-sm);
+}
+
+.value-content p {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Audience Section */
+.audience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-2xl);
+    margin-top: var(--spacing-3xl);
+}
+
+.audience-card {
+    padding: var(--spacing-2xl);
+    background-color: var(--color-warm-white);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: transform var(--transition-base);
+}
+
+.audience-card:hover {
+    transform: translateY(-4px);
+}
+
+.audience-card h3 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-charcoal-black);
+    margin-bottom: var(--spacing-md);
+}
+
+.audience-card p {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Process Section */
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-3xl);
+    margin-top: var(--spacing-3xl);
+}
+
+.process-step {
+    text-align: center;
+    padding: var(--spacing-2xl);
+}
+
+.step-number {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: var(--color-deep-blue-grey);
+    color: var(--color-warm-white);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    border-radius: 50%;
+    margin-bottom: var(--spacing-lg);
+}
+
+.process-step h3 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-charcoal-black);
+    margin-bottom: var(--spacing-md);
+}
+
+.process-step p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: var(--font-size-4xl);
+    }
+
+    .about-tagline {
+        font-size: var(--font-size-lg);
+    }
+
+    .about-section h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .value-item {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-lg);
+    }
+
+    .value-icon {
+        margin: 0 auto;
+    }
+
+    .process-steps {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    .audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fandoms-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Fandoms Section */
+.fandoms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 800px;
+    margin: var(--spacing-3xl) auto 0;
+}
+
+.fandom-badge {
+    padding: var(--spacing-lg) var(--spacing-xl);
+    background-color: var(--color-charcoal-black);
+    color: var(--color-warm-white);
+    text-align: center;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: 0.025em;
+    transition: all var(--transition-base);
+}
+
+.fandom-badge:hover {
+    background-color: var(--color-deep-blue-grey);
+    transform: translateY(-2px);
+}
+
+/* India Section */
+.india-banner {
+    text-align: center;
+    padding: var(--spacing-4xl) var(--spacing-2xl);
+    background: linear-gradient(135deg, var(--color-warm-white) 0%, #ffffff 100%);
+    border: 2px solid var(--color-charcoal-black);
+    border-radius: var(--radius-lg);
+}
+
+.india-flag {
+    font-size: var(--font-size-5xl);
+    margin-bottom: var(--spacing-lg);
+    display: block;
+}
+
+.india-banner h3 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-charcoal-black);
+    margin-bottom: var(--spacing-md);
+}
+
+.india-banner p {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
