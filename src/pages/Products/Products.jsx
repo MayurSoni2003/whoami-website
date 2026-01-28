@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { getApiUrl } from '../../config';
 import CollectionGrid from '../../components/CollectionGrid/CollectionGrid';
 import './Products.css';
 
@@ -12,7 +13,7 @@ const Products = () => {
         const fetchProducts = async () => {
             try {
                 setLoading(true);
-                const response = await axios.get('/api/products');
+                const response = await axios.get(getApiUrl('/api/products'));
 
                 if (response.data.success) {
                     setProducts(response.data.data);

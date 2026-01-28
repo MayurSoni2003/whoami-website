@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { getApiUrl } from '../../config';
 import Hero from '../../components/Hero/Hero';
 import CollectionGrid from '../../components/CollectionGrid/CollectionGrid';
 import './Home.css';
@@ -11,7 +12,7 @@ const Home = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('/api/products');
+                const response = await axios.get(getApiUrl('/api/products'));
                 if (response.data.success) {
                     // Limit to 6 products for home page preview
                     setProducts(response.data.data.slice(0, 6));

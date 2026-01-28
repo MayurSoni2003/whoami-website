@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
+import { getApiUrl } from '../../config';
 import './ProductDetail.css';
 
 const ProductDetail = () => {
@@ -13,7 +14,7 @@ const ProductDetail = () => {
         const fetchProduct = async () => {
             try {
                 setLoading(true);
-                const response = await axios.get(`/api/products/${id}`);
+                const response = await axios.get(getApiUrl(`/api/products/${id}`));
 
                 if (response.data.success) {
                     setProduct(response.data.data);
