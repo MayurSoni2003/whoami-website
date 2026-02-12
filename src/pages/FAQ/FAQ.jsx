@@ -59,7 +59,9 @@ const FAQ = () => {
                 <div className="faq-list">
                     {faqs.map((faq, index) => (
                         <div key={index} className="faq-item">
-                            <h3 className="faq-question">{faq.question}</h3>
+                            <h3 className="faq-question">
+                                <span className="faq-number">Q{index + 1}.</span> {faq.question}
+                            </h3>
                             <p className="faq-answer">{faq.answer}</p>
                         </div>
                     ))}

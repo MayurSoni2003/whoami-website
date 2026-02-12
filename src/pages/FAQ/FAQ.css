@@ -50,6 +50,12 @@
     margin-bottom: var(--spacing-md);
 }
 
+.faq-number {
+    color: var(--color-text-secondary);
+    margin-right: var(--spacing-xs);
+    font-weight: var(--font-weight-bold);
+}
+
 .faq-answer {
     font-size: var(--font-size-base);
     color: var(--color-text-secondary);
