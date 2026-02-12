@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import './Contact.css';
 
+// IMPORTANT: Replace this URL with your deployed Google Apps Script Web App URL
+// Get it from: Extensions > Apps Script > Deploy > New deployment > Web app URL
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbztif46bJmM11JFhEZTTbB3F07cVR0wnja4f_soFYLLcUWB3_5nft5ytRa853BBI18t/exec';
+
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -10,6 +14,8 @@ const Contact = () => {
     });
 
     const [submitted, setSubmitted] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -19,18 +25,39 @@ const Contact = () => {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
+        setError(null);
 
-        // Frontend-only form handling for now
-        console.log('Form submitted:', formData);
-        setSubmitted(true);
+        try {
+            // Submit to Google Sheets via Apps Script
+            const response = await fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors', // Important for Google Apps Script
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            });
 
-        // Reset form after 3 seconds
-        setTimeout(() => {
-            setFormData({ name: '', email: '', subject: '', message: '' });
-            setSubmitted(false);
-        }, 3000);
+            // Note: no-cors mode doesn't allow reading the response
+            // We assume success if no error is thrown
+            console.log('Form submitted successfully:', formData);
+            setSubmitted(true);
+
+            // Reset form after 5 seconds
+            setTimeout(() => {
+                setFormData({ name: '', email: '', subject: '', message: '' });
+                setSubmitted(false);
+            }, 5000);
+
+        } catch (err) {
+            console.error('Error submitting form:', err);
+            setError('Failed to submit form. Please try again or email us directly.');
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -49,6 +76,19 @@ const Contact = () => {
                     {/* Contact Form */}
                     <div className="contact-form-section">
                         <h2>Send us a Message</h2>
+
+                        {error && (
+                            <div className="error-message" style={{
+                                padding: '1rem',
+                                marginBottom: '1rem',
+                                backgroundColor: '#fee',
+                                border: '1px solid #fcc',
+                                borderRadius: '8px',
+                                color: '#c33'
+                            }}>
+                                <p>{error}</p>
+                            </div>
+                        )}
 
                         {submitted ? (
                             <div className="success-message">
@@ -70,6 +110,7 @@ const Contact = () => {
                                         onChange={handleChange}
                                         required
                                         placeholder="Your full name"
+                                        disabled={loading}
                                     />
                                 </div>
 
@@ -83,6 +124,7 @@ const Contact = () => {
                                         onChange={handleChange}
                                         required
                                         placeholder="your.email@example.com"
+                                        disabled={loading}
                                     />
                                 </div>
 
@@ -96,6 +138,7 @@ const Contact = () => {
                                         onChange={handleChange}
                                         required
                                         placeholder="What's this about?"
+                                        disabled={loading}
                                     />
                                 </div>
 
@@ -109,11 +152,12 @@ const Contact = () => {
                                         required
                                         rows="6"
                                         placeholder="Tell us more..."
+                                        disabled={loading}
                                     ></textarea>
                                 </div>
 
-                                <button type="submit" className="btn-primary">
-                                    Send Message
+                                <button type="submit" className="btn-primary" disabled={loading}>
+                                    {loading ? 'Sending...' : 'Send Message'}
                                 </button>
                             </form>
                         )}
@@ -128,15 +172,23 @@ const Contact = () => {
                                 <div className="contact-icon">✉</div>
                                 <div className="contact-content">
                                     <h3>Email</h3>
-                                    <a href="mailto:hello@whoami.craft">hello@whoami.craft</a>
+                                    <a href="mailto:studios.whoami@gmail.com">studios.whoami@gmail.com</a>
                                 </div>
                             </div>
 
                             <div className="contact-item">
-                                <div className="contact-icon">☎</div>
+                                <div className="contact-icon">📍</div>
                                 <div className="contact-content">
-                                    <h3>Phone</h3>
-                                    <a href="tel:+911234567890">+91 12345 67890</a>
+                                    <h3>Location</h3>
+                                    <p>Jaipur, India 🇮🇳</p>
+                                </div>
+                            </div>
+
+                            <div className="contact-item">
+                                <div className="contact-icon">📷</div>
+                                <div className="contact-content">
+                                    <h3>Instagram</h3>
+                                    <a href="https://www.instagram.com/whoami.studios" target="_blank" rel="noopener noreferrer">@whoami.studios</a>
                                 </div>
                             </div>
 
@@ -150,11 +202,10 @@ const Contact = () => {
                         </div>
 
                         <div className="contact-note">
-                            <h3>Note</h3>
+                            <h3>Connect with Us</h3>
                             <p>
-                                This is a showcase website. The contact form is for demonstration
-                                purposes only. For actual inquiries, please use the email or phone
-                                provided above.
+                                Follow us on Instagram <strong>@whoami.studios</strong> for behind-the-scenes
+                                content and new product releases. Or find us on Pinterest for design inspiration.
                             </p>
                         </div>
                     </div>

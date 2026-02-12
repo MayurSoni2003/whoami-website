@@ -5,10 +5,12 @@ const Navbar = () => {
     const location = useLocation();
 
     const navLinks = [
-        { path: '/', label: 'Home' },
-        { path: '/products', label: 'Products' },
-        { path: '/about', label: 'About' },
-        { path: '/contact', label: 'Contact' },
+        { path: '/', label: 'HOME' },
+        { path: '/products', label: 'PRODUCTS' },
+        { path: '/about', label: 'ABOUT' },
+        { path: '/faq', label: 'FAQ' },
+        // { path: '/blog', label: 'JOURNAL' },
+        { path: '/contact', label: 'CONTACT' },
     ];
 
     const isActive = (path) => {

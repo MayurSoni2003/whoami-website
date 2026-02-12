@@ -31,20 +31,19 @@ const Home = () => {
         <div className="home-page">
             <Hero />
 
-            {/* Fandoms Section */}
+            {/* Worlds Section */}
             <section className="section fandoms-showcase">
                 <div className="container">
-                    <h2 className="text-center">Celebrate Your Fandom</h2>
+                    <h2 className="text-center">Translate Your World</h2>
                     <p className="section-description text-center">
-                        From wizards to superheroes, we craft merchandise for fans who wear their identity with pride.
+                        Artifacts for the quietly expressive. From wizards to superheroes, symbols of your universe, crafted with precision in Jaipur.
                     </p>
                     <div className="fandom-badges">
-                        <span className="fandom-tag">Harry Potter</span>
-                        <span className="fandom-tag">Marvel</span>
-                        <span className="fandom-tag">Star Wars</span>
-                        <span className="fandom-tag">DC Comics</span>
-                        <span className="fandom-tag">Anime</span>
-                        <span className="fandom-tag">Gaming</span>
+                        <span className="fandom-tag">The Wizarding World</span>
+                        <span className="fandom-tag">Superhero Universes</span>
+                        <span className="fandom-tag">Galactic Sagas</span>
+                        <span className="fandom-tag">Comic Mythologies</span>
+                        <span className="fandom-tag">Gaming Realms</span>
                     </div>
                 </div>
             </section>
@@ -53,10 +52,10 @@ const Home = () => {
             <section className="section featured-section">
                 <div className="container">
                     <div className="section-header">
-                        <h2>Featured Collections</h2>
+                        <h2>Featured Artifacts</h2>
                         <p className="section-description">
-                            Handcrafted desk accessories and collectibles for fans. Made in India
-                            with precision 3D printing and laser cutting.
+                            Handcrafted desk accessories and identity pieces. 3D-printed precision and laser-cut artistry
+                            for those who refuse to blend in.
                         </p>
                     </div>
 
@@ -74,33 +73,42 @@ const Home = () => {
             {/* Values Section */}
             <section className="section values-section">
                 <div className="container">
-                    <h2 className="text-center">Why Fans Choose Us</h2>
+                    <h2 className="text-center">Why Choose WhoAmI</h2>
 
                     <div className="values-grid">
                         <div className="value-card">
                             <div className="value-icon">✦</div>
-                            <h3>Fandom Identity</h3>
+                            <h3>Identity</h3>
                             <p>
-                                Your desk is your identity. Let the world know if you're Team Gryffindor,
-                                Team Iron Man, or serving the Empire.
+                                Not what you wear. Who you are. Artifacts that resonate with those
+                                who understand the difference between a symbol and a logo.
                             </p>
                         </div>
 
                         <div className="value-card">
-                            <div className="value-icon">♡</div>
-                            <h3>Fan to Fan</h3>
+                            <div className="value-icon">⚡</div>
+                            <h3>Rebellion</h3>
                             <p>
-                                Made by fans, for fans. We understand the emotional connection
-                                to your favorite franchises.
+                                Quiet. Confident. Refusing to conform to beige aesthetics and
+                                generic workspaces. Premium craft for the quietly extraordinary.
                             </p>
                         </div>
 
                         <div className="value-card">
                             <div className="value-icon">🇮🇳</div>
-                            <h3>Made in India</h3>
+                            <h3>Indian Craft</h3>
                             <p>
-                                Proudly crafted in India using premium materials. Supporting
-                                local manufacturing, serving fans nationwide.
+                                Designed and crafted in India. Supporting local manufacturing,
+                                creating artifacts worthy of your identity.
+                            </p>
+                        </div>
+
+                        <div className="value-card">
+                            <div className="value-icon">◈</div>
+                            <h3>Connection</h3>
+                            <p>
+                                From our Jaipur workshops to desks across India and beyond.
+                                Globally understood, locally crafted.
                             </p>
                         </div>
 
@@ -108,8 +116,7 @@ const Home = () => {
                             <div className="value-icon">🎁</div>
                             <h3>Perfect Gifts</h3>
                             <p>
-                                Know a Potter fan or a Marvel enthusiast? Our products make
-                                meaningful gifts they'll treasure forever.
+                                Know some fantasy person? Our products make meaningful gifts they'll treasure forever.
                             </p>
                         </div>
                     </div>

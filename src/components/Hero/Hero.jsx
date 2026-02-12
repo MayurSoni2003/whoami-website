@@ -7,15 +7,18 @@ const Hero = () => {
             <div className="hero-container container">
                 <div className="hero-content">
                     <h1 className="hero-title">
-                        Identity, <br />
-                        <span className="hero-title-accent">crafted.</span>
+                        Identity. <br />
+                        <span className="hero-title-accent">Chosen. Worn. Lived.</span>
                     </h1>
 
                     <p className="hero-description">
-                        India's home for handcrafted fandom merchandise. From Harry Potter to Marvel,
-                        Star Wars to anime—we create 3D-printed and laser-cut desk accessories,
-                        collectibles, and personalized gifts for true fans who wear their
-                        fandoms with pride.
+                        You don't choose what you love, you discover who you've always been.
+                        We craft artifacts for those who refuse to blend in. Symbols of your world,
+                        worn on your terms. Not merchandise. Your identity, made tangible.
+                    </p>
+
+                    <p className="hero-location">
+                        Designed in Jaipur for the quietly expressive.
                     </p>
 
                     <div className="hero-cta">
@@ -31,16 +34,16 @@ const Hero = () => {
                 <div className="hero-stats">
                     <div className="stat-item">
                         <span className="stat-number">15+</span>
-                        <span className="stat-label">Products Crafted</span>
+                        <span className="stat-label">Artifacts Crafted</span>
                     </div>
                     <div className="stat-divider"></div>
                     <div className="stat-item">
                         <span className="stat-number">🇮🇳</span>
-                        <span className="stat-label">Made in India</span>
+                        <span className="stat-label">Made in Jaipur</span>
                     </div>
                     <div className="stat-divider"></div>
                     <div className="stat-item">
-                        <span className="stat-number">100%</span>
+                        <span className="stat-number">100 %</span>
                         <span className="stat-label">Fan-Crafted</span>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ const About = () => {
                 {/* Hero Section */}
                 <div className="about-hero">
                     <h1>About WhoAmI</h1>
-                    <p className="about-tagline">India's home for fandom merchandise, crafted with love.</p>
+                    <p className="about-tagline">Where identity meets craft. Where rebellion is subtle.</p>
                 </div>
 
                 {/* Story Section */}
@@ -15,36 +15,37 @@ const About = () => {
                     <h2>Our Story</h2>
                     <div className="about-content">
                         <p>
-                            WhoAmI was born in India from a simple belief: true fans deserve products
-                            that celebrate their identity. Whether you're a Potterhead who dreams of Hogwarts,
-                            a Marvel enthusiast who knows every character's origin, or a Star Wars devotee
-                            who can quote every line—we create for you.
+                            WhoAmI was born in India from a quiet rebellion: the refusal to explain yourself.
                         </p>
                         <p>
-                            As a proudly Indian brand, we combine cutting-edge 3D printing and precision
-                            laser cutting with the passion of fellow fans. Every product we craft isn't
-                            just merchandise—it's a piece of your identity that transforms your desk
-                            into a shrine of your favorite franchises.
+                            We craft artifacts for those who belong to worlds beyond the ordinary—
+                            fantasy realms, sci-fi universes, mythologies reimagined. Not because you're a "fan,"
+                            but because these stories are part of who you are.
                         </p>
                         <p>
-                            From college dorm rooms in Delhi to corporate desks in Bangalore, our products
-                            help fans across India express who they truly are. Because your fandom is your
-                            identity, and your desk should prove it.
+                            Your desk isn't a workspace. It's a declaration. Your hoodie isn't clothing.
+                            It's a manifesto you don't need to speak aloud.
+                        </p>
+                        <p>
+                            For the students in Bangalore who carry magic in their backpacks.
+                            For the creators in Delhi who build universes pixel by pixel.
+                            For everyone who knows: identity isn't chosen. It's discovered, then owned.
                         </p>
                     </div>
                 </section>
 
-                {/* Fandoms Section */}
+                {/* Worlds Section */}
                 <section className="about-section fandoms-section">
-                    <h2>Fandoms We Celebrate</h2>
+                    <h2>Worlds We Translate</h2>
                     <div className="fandoms-grid">
-                        <div className="fandom-badge">Harry Potter</div>
-                        <div className="fandom-badge">Marvel</div>
-                        <div className="fandom-badge">Star Wars</div>
-                        <div className="fandom-badge">DC Comics</div>
-                        <div className="fandom-badge">Anime</div>
-                        <div className="fandom-badge">Gaming</div>
-                        <div className="fandom-badge">Lord of the Rings</div>
+                        <div className="fandom-badge">The Wizarding World</div>
+                        <div className="fandom-badge">Superhero Universes</div>
+                        <div className="fandom-badge">Galactic Sagas</div>
+                        <div className="fandom-badge">Comics</div>
+                        <div className="fandom-badge">Mythologies</div>
+                        <div className="fandom-badge">Gaming Realms</div>
+                        <div className="fandom-badge">Fantasy Epics</div>
+                        <div className="fandom-badge">Your Universe</div>
                         <div className="fandom-badge">Custom Requests</div>
                     </div>
                 </section>
@@ -58,9 +59,19 @@ const About = () => {
                             <div className="value-content">
                                 <h3>Identity</h3>
                                 <p>
-                                    Your fandom is your identity. We create products that let you proudly
-                                    display which universe you belong to—whether it's Gryffindor, Team Iron Man,
-                                    or the Rebel Alliance. Your desk, your identity.
+                                    Not what you wear. Who you are. Artifacts that don't announce, they resonate.
+                                    For those who know the difference between a symbol and a logo. Your desk, your identity.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="value-item">
+                            <div className="value-icon">⚡</div>
+                            <div className="value-content">
+                                <h3>Rebellion</h3>
+                                <p>
+                                    The quiet kind. The kind that doesn't shout but refuses to conform.
+                                    Premium craftsmanship for those who won't blend into beige cubicles and generic aesthetics.
                                 </p>
                             </div>
                         </div>
@@ -70,9 +81,9 @@ const About = () => {
                             <div className="value-content">
                                 <h3>Emotion</h3>
                                 <p>
-                                    Every product evokes the magic of your favorite stories. The thrill of
-                                    seeing your house crest on your desk, the joy of gifting a fellow fan
-                                    something truly special—we design for emotional connection.
+                                    Every product evokes the magic of your favorite stories. The thrill of seeing your
+                                    house crest on your desk, the joy of gifting a loved one something truly special.
+                                    We design for emotional connection.
                                 </p>
                             </div>
                         </div>
@@ -82,9 +93,9 @@ const About = () => {
                             <div className="value-content">
                                 <h3>Craft</h3>
                                 <p>
-                                    Made in India with precision engineering. We use premium materials,
-                                    3D printing, and laser cutting to create products that are as refined
-                                    as they are meaningful. Quality that lasts.
+                                    Made in India with precision engineering. We use premium materials, 3D printing, and
+                                    laser cutting to create products that are as refined as they are meaningful.
+                                    Quality that lasts.
                                 </p>
                             </div>
                         </div>
@@ -94,8 +105,19 @@ const About = () => {
                             <div className="value-content">
                                 <h3>Trust</h3>
                                 <p>
-                                    An Indian brand you can trust. Transparent pricing, honest materials,
-                                    and reliable delivery across India. We're fans serving fans.
+                                    An Indian brand you can trust. Transparent pricing, honest materials, and
+                                    reliable delivery across India. We're fans serving fans.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="value-item">
+                            <div className="value-icon">◈</div>
+                            <div className="value-content">
+                                <h3>Connection</h3>
+                                <p>
+                                    From Jaipur workshops to your desk in Delhi, Bangalore, Mumbai, or anywhere
+                                    you're building your world. Indian-made, globally understood.
                                 </p>
                             </div>
                         </div>
@@ -107,27 +129,27 @@ const About = () => {
                     <h2>Who We Create For</h2>
                     <div className="audience-grid">
                         <div className="audience-card">
-                            <h3>College Students</h3>
+                            <h3>Students & Creators</h3>
                             <p>
-                                Transform your dorm room or study desk into a fandom shrine.
-                                Budget-friendly merchandise that lets you proudly display
-                                your Hogwarts house or favorite superhero.
+                                Your dorm room, your studio, your late-night coding setup —
+                                spaces that deserve artifacts of who you're becoming.
+                                Budget-friendly identity pieces that don't apologize for passion.
                             </p>
                         </div>
                         <div className="audience-card">
                             <h3>Young Professionals</h3>
                             <p>
-                                Subtle yet unmistakable fandom touches for your workspace.
-                                Sophisticated desk accessories that hint at your inner
-                                Jedi, wizard, or superhero to those who know.
+                                Your workspace doesn't have to scream to speak volumes.
+                                Subtle symbols that say "I refuse to be ordinary" to those who understand.
+                                Professional on the surface, extraordinary beneath.
                             </p>
                         </div>
                         <div className="audience-card">
                             <h3>Gift Seekers</h3>
                             <p>
-                                The perfect gift for the fan who has everything. Personalized
-                                merchandise that shows you truly understand their fandom
-                                and appreciate their identity.
+                                For the person who doesn't need more stuff, they need
+                                validation that someone sees who they really are.
+                                Artifacts that say "I get you" without explanation.
                             </p>
                         </div>
                     </div>
@@ -141,32 +163,32 @@ const About = () => {
                             <div className="step-number">01</div>
                             <h3>Design</h3>
                             <p>
-                                Fellow fans design every product. We research, prototype,
-                                and refine until we create something worthy of your desk.
+                                Universes translated into tangible form. Research, iteration,
+                                refinement, until we create something worthy of your identity.
                             </p>
                         </div>
                         <div className="process-step">
                             <div className="step-number">02</div>
                             <h3>Craft</h3>
                             <p>
-                                Made in India using 3D printing and laser cutting. Premium
-                                materials ensure durability fit for any fandom.
+                                Made in India using 3D printing and laser cutting.
+                                Premium materials ensure durability fit for everyone.
                             </p>
                         </div>
                         <div className="process-step">
                             <div className="step-number">03</div>
                             <h3>Quality Check</h3>
                             <p>
-                                Every piece is inspected by fellow fans. If it's not good
-                                enough for our desks, it's not good enough for yours.
+                                Every piece inspected by those who understand what these symbols mean.
+                                Not good enough for us? Not good enough for you.
                             </p>
                         </div>
                         <div className="process-step">
                             <div className="step-number">04</div>
                             <h3>Deliver</h3>
                             <p>
-                                Shipped with care across India. Your merchandise arrives
-                                ready to prove your identity to the world.
+                                Shipped across India with care. Your artifact arrives ready
+                                to prove your identity to the world.
                             </p>
                         </div>
                     </div>
@@ -178,8 +200,8 @@ const About = () => {
                         <span className="india-flag">🇮🇳</span>
                         <h3>Proudly Made in India</h3>
                         <p>
-                            Designed, crafted, and shipped from India. Supporting local manufacturing
-                            while creating world-class fandom merchandise for fans across the country.
+                            Designed, crafted, and shipped from Jaipur. Indian creativity meets global
+                            standards, creating identity artifacts for the quietly expressive wherever they are.
                         </p>
                     </div>
                 </section>

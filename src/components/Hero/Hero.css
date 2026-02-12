@@ -37,11 +37,19 @@
     font-size: var(--font-size-lg);
     color: var(--color-text-secondary);
     line-height: 1.8;
-    margin-bottom: var(--spacing-3xl);
+    margin-bottom: var(--spacing-xl);
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
+
+.hero-location {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-bottom: var(--spacing-3xl);
+}
+
 
 /* CTA Buttons */
 .hero-cta {
