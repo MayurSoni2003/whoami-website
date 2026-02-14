@@ -46,7 +46,7 @@ const About = () => {
                         <div className="fandom-badge">Gaming Realms</div>
                         <div className="fandom-badge">Fantasy Epics</div>
                         <div className="fandom-badge">Your Universe</div>
-                        <div className="fandom-badge">Custom Requests</div>
+                        {/* <div className="fandom-badge">Custom Requests</div> */}
                     </div>
                 </section>
 

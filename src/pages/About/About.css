@@ -15,7 +15,7 @@
 .about-hero h1 {
     font-size: var(--font-size-5xl);
     font-weight: var(--font-weight-bold);
-    color: var(--color-charcoal-black);
+    color: var(--color-text-primary);
     margin-bottom: var(--spacing-lg);
     letter-spacing: -0.02em;
 }
@@ -35,7 +35,7 @@
 .about-section h2 {
     font-size: var(--font-size-3xl);
     font-weight: var(--font-weight-semibold);
-    color: var(--color-charcoal-black);
+    color: var(--color-text-primary);
     margin-bottom: var(--spacing-2xl);
     text-align: center;
 }
@@ -78,7 +78,7 @@
 
 .value-icon {
     font-size: var(--font-size-4xl);
-    color: var(--color-deep-blue-grey);
+    color: var(--color-warm-gold);
     flex-shrink: 0;
     width: 60px;
     height: 60px;
@@ -90,7 +90,7 @@
 .value-content h3 {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
-    color: var(--color-charcoal-black);
+    color: var(--color-text-primary);
     margin-bottom: var(--spacing-sm);
 }
 
@@ -111,7 +111,8 @@
 
 .audience-card {
     padding: var(--spacing-2xl);
-    background-color: var(--color-warm-white);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
     text-align: center;
     transition: transform var(--transition-base);
@@ -124,7 +125,7 @@
 .audience-card h3 {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
-    color: var(--color-charcoal-black);
+    color: var(--color-text-primary);
     margin-bottom: var(--spacing-md);
 }
 
@@ -153,8 +154,8 @@
     width: 60px;
     height: 60px;
     line-height: 60px;
-    background-color: var(--color-deep-blue-grey);
-    color: var(--color-warm-white);
+    background: linear-gradient(135deg, var(--color-warm-gold), var(--color-amber-glow));
+    color: var(--color-deep-black);
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
     border-radius: 50%;
@@ -164,7 +165,7 @@
 .process-step h3 {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
-    color: var(--color-charcoal-black);
+    color: var(--color-text-primary);
     margin-bottom: var(--spacing-md);
 }
 
@@ -224,8 +225,9 @@
 
 .fandom-badge {
     padding: var(--spacing-lg) var(--spacing-xl);
-    background-color: var(--color-charcoal-black);
-    color: var(--color-warm-white);
+    background-color: var(--color-surface);
+    color: var(--color-warm-gold);
+    border: 1px solid var(--color-border);
     text-align: center;
     border-radius: var(--radius-md);
     font-size: var(--font-size-sm);
@@ -235,7 +237,8 @@
 }
 
 .fandom-badge:hover {
-    background-color: var(--color-deep-blue-grey);
+    background-color: var(--color-warm-gold);
+    color: var(--color-deep-black);
     transform: translateY(-2px);
 }
 
@@ -243,8 +246,8 @@
 .india-banner {
     text-align: center;
     padding: var(--spacing-4xl) var(--spacing-2xl);
-    background: linear-gradient(135deg, var(--color-warm-white) 0%, #ffffff 100%);
-    border: 2px solid var(--color-charcoal-black);
+    background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-charcoal-black) 100%);
+    border: 2px solid var(--color-warm-gold);
     border-radius: var(--radius-lg);
 }
 
@@ -257,7 +260,7 @@
 .india-banner h3 {
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-semibold);
-    color: var(--color-charcoal-black);
+    color: var(--color-text-primary);
     margin-bottom: var(--spacing-md);
 }
 

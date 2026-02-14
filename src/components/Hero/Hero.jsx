@@ -8,7 +8,7 @@ const Hero = () => {
                 <div className="hero-content">
                     <h1 className="hero-title">
                         Identity. <br />
-                        <span className="hero-title-accent">Chosen. Worn. Lived.</span>
+                        <span className="hero-title-accent" style={{ color: "var(--color-warm-gold)" }}>Chosen. Worn. Lived.</span>
                     </h1>
 
                     <p className="hero-description">
@@ -33,7 +33,7 @@ const Hero = () => {
 
                 <div className="hero-stats">
                     <div className="stat-item">
-                        <span className="stat-number">15+</span>
+                        <span className="stat-number" style={{ color: "var(--color-warm-gold)" }}>15+</span>
                         <span className="stat-label">Artifacts Crafted</span>
                     </div>
                     <div className="stat-divider"></div>
@@ -43,12 +43,12 @@ const Hero = () => {
                     </div>
                     <div className="stat-divider"></div>
                     <div className="stat-item">
-                        <span className="stat-number">100 %</span>
+                        <span className="stat-number" style={{ color: "var(--color-warm-gold)" }}>100 %</span>
                         <span className="stat-label">Fan-Crafted</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 

@@ -21,8 +21,11 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container container">
                 <Link to="/" className="navbar-logo">
-                    <span className="logo-text">WhoAmI</span>
-                    <span className="logo-subtitle">Identity, crafted.</span>
+                    <img src="/whoami_logo.png" alt="WhoAmI Logo" className="logo-image" />
+                    <div className="logo-text-container">
+                        <span className="logo-text">WhoAmI</span>
+                        <span className="logo-subtitle">Identity, crafted.</span>
+                    </div>
                 </Link>
 
                 <ul className="navbar-menu">

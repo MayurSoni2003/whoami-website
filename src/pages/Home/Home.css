@@ -16,11 +16,12 @@
     margin-right: auto;
 }
 
-.section-header h2 {
+.section-title {
     font-size: var(--font-size-4xl);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-charcoal-black);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
     margin-bottom: var(--spacing-lg);
+    text-align: center;
 }
 
 .section-description {
@@ -62,11 +63,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: var(--spacing-2xl);
-    background-color: var(--color-warm-white);
+    padding: var(--spacing-xl);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
-    transition: transform var(--transition-base);
+    text-align: center;
+    transition: transform var(--transition-base, 0.3s ease), box-shadow var(--transition-base, 0.3s ease);
 }
 
 .value-card:hover {
@@ -83,8 +85,8 @@
 .value-card h3 {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
-    color: var(--color-charcoal-black);
-    margin-bottom: var(--spacing-md);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-sm);
 }
 
 .value-card p {
@@ -134,7 +136,7 @@
 }
 
 .fandoms-showcase .section-description {
-    color: #cccccc;
+    color: var(--color-text-secondary);
     max-width: 600px;
     margin: 0 auto var(--spacing-3xl);
 }

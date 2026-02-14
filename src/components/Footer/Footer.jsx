@@ -10,8 +10,13 @@ const Footer = () => {
                 <div className="footer-grid">
                     {/* Brand Column */}
                     <div className="footer-column">
-                        <h3 className="footer-brand">WhoAmI</h3>
-                        <p className="footer-tagline">Identity. Chosen. Worn. Lived.</p>
+                        <div className="footer-brand-container">
+                            <img src="/whoami_logo.png" alt="WhoAmI Logo" className="footer-logo" />
+                            <div>
+                                <h3 className="footer-brand">WhoAmI</h3>
+                                <p className="footer-tagline">Identity. Chosen. Worn. Lived.</p>
+                            </div>
+                        </div>
                         <p className="footer-description">
                             Artifacts for the quietly expressive. Crafted in Jaipur for those who
                             refuse to blend in. Not merchandise, your identity, made tangible.

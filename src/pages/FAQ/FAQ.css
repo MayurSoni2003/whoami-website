@@ -11,7 +11,7 @@
 .faq-header h1 {
     font-size: var(--font-size-5xl);
     font-weight: var(--font-weight-bold);
-    color: var(--color-charcoal-black);
+    color: var(--color-text-primary);
     margin-bottom: var(--spacing-lg);
 }
 
@@ -46,7 +46,7 @@
 .faq-question {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
-    color: var(--color-charcoal-black);
+    color: var(--color-text-primary);
     margin-bottom: var(--spacing-md);
 }
 
@@ -74,7 +74,7 @@
 .faq-cta h2 {
     font-size: var(--font-size-3xl);
     font-weight: var(--font-weight-bold);
-    color: var(--color-charcoal-black);
+    color: var(--color-text-primary);
     margin-bottom: var(--spacing-lg);
 }
 
@@ -86,10 +86,10 @@
 }
 
 .faq-cta a {
-    color: var(--color-charcoal-black);
+    color: var(--color-warm-gold);
     font-weight: var(--font-weight-semibold);
     text-decoration: none;
-    border-bottom: 2px solid var(--color-charcoal-black);
+    border-bottom: 2px solid var(--color-warm-gold);
     transition: all 0.3s ease;
 }
 

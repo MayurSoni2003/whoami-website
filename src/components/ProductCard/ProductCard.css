@@ -21,9 +21,10 @@
 .product-card-image {
     width: 100%;
     aspect-ratio: 1 / 1;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     overflow: hidden;
-    background-color: var(--color-warm-white);
-    position: relative;
 }
 
 .product-card-image img {
@@ -53,10 +54,10 @@
 }
 
 .product-card-title {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
-    color: var(--color-charcoal-black);
-    margin: 0;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-sm);
     line-height: 1.3;
 }
 
