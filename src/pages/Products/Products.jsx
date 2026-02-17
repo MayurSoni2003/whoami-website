@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { getApiUrl } from '../../config';
-import CollectionGrid from '../../components/CollectionGrid/CollectionGrid';
+import ProductCarousel from '../../components/ProductCarousel/ProductCarousel';
 import './Products.css';
 
 const Products = () => {
@@ -57,6 +57,18 @@ const Products = () => {
         );
     }
 
+    // Group products by category
+    const productsByCategory = products.reduce((acc, product) => {
+        const category = product.Category || 'Uncategorized';
+        if (!acc[category]) {
+            acc[category] = [];
+        }
+        acc[category].push(product);
+        return acc;
+    }, {});
+
+    const categories = Object.keys(productsByCategory);
+
     return (
         <div className="products-page">
             <div className="container">
@@ -69,7 +81,15 @@ const Products = () => {
                     </p>
                 </div>
 
-                <CollectionGrid products={products} showFilters={true} />
+                <div className="products-sections">
+                    {categories.map((category) => (
+                        <ProductCarousel
+                            key={category}
+                            categoryName={category}
+                            products={productsByCategory[category]}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     );

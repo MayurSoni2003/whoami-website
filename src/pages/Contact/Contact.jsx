@@ -195,7 +195,7 @@ const Contact = () => {
                             <div className="contact-item">
                                 <div className="contact-icon">⌚</div>
                                 <div className="contact-content">
-                                    <h3>Hours</h3>
+                                    <h3>Contact Hours</h3>
                                     <p>Monday - Friday<br />9:00 AM - 6:00 PM IST</p>
                                 </div>
                             </div>

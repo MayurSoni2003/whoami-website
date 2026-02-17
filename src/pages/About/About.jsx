@@ -1,3 +1,4 @@
+import ValuesCarousel from '../../components/ValuesCarousel/ValuesCarousel';
 import './About.css';
 
 const About = () => {
@@ -50,79 +51,8 @@ const About = () => {
                     </div>
                 </section>
 
-                {/* Values Section */}
-                <section className="about-section values-section">
-                    <h2>What We Stand For</h2>
-                    <div className="values-list">
-                        <div className="value-item">
-                            <div className="value-icon">✦</div>
-                            <div className="value-content">
-                                <h3>Identity</h3>
-                                <p>
-                                    Not what you wear. Who you are. Artifacts that don't announce, they resonate.
-                                    For those who know the difference between a symbol and a logo. Your desk, your identity.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="value-item">
-                            <div className="value-icon">⚡</div>
-                            <div className="value-content">
-                                <h3>Rebellion</h3>
-                                <p>
-                                    The quiet kind. The kind that doesn't shout but refuses to conform.
-                                    Premium craftsmanship for those who won't blend into beige cubicles and generic aesthetics.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="value-item">
-                            <div className="value-icon">♡</div>
-                            <div className="value-content">
-                                <h3>Emotion</h3>
-                                <p>
-                                    Every product evokes the magic of your favorite stories. The thrill of seeing your
-                                    house crest on your desk, the joy of gifting a loved one something truly special.
-                                    We design for emotional connection.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="value-item">
-                            <div className="value-icon">⬢</div>
-                            <div className="value-content">
-                                <h3>Craft</h3>
-                                <p>
-                                    Made in India with precision engineering. We use premium materials, 3D printing, and
-                                    laser cutting to create products that are as refined as they are meaningful.
-                                    Quality that lasts.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="value-item">
-                            <div className="value-icon">✓</div>
-                            <div className="value-content">
-                                <h3>Trust</h3>
-                                <p>
-                                    An Indian brand you can trust. Transparent pricing, honest materials, and
-                                    reliable delivery across India. We're fans serving fans.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="value-item">
-                            <div className="value-icon">◈</div>
-                            <div className="value-content">
-                                <h3>Connection</h3>
-                                <p>
-                                    From Jaipur workshops to your desk in Delhi, Bangalore, Mumbai, or anywhere
-                                    you're building your world. Indian-made, globally understood.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* Values Section - Carousel */}
+                <ValuesCarousel />
 
                 {/* Audience Section */}
                 <section className="about-section">

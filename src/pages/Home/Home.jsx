@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { getApiUrl } from '../../config';
 import Hero from '../../components/Hero/Hero';
-import CollectionGrid from '../../components/CollectionGrid/CollectionGrid';
+import ProductCarousel from '../../components/ProductCarousel/ProductCarousel';
 import './Home.css';
 
 const Home = () => {
@@ -51,13 +51,6 @@ const Home = () => {
             {/* Featured Products Section */}
             <section className="section featured-section">
                 <div className="container">
-                    <div className="section-header">
-                        <h2>Featured Artifacts</h2>
-                        <p className="section-description">
-                            Handcrafted desk accessories and identity pieces. 3D-printed precision and laser-cut artistry
-                            for those who refuse to blend in.
-                        </p>
-                    </div>
 
                     {loading ? (
                         <div className="loading-state">
@@ -65,7 +58,10 @@ const Home = () => {
                             <p>Loading products...</p>
                         </div>
                     ) : (
-                        <CollectionGrid products={products} showFilters={false} />
+                        <ProductCarousel
+                            categoryName="Featured Artifacts"
+                            products={products}
+                        />
                     )}
                 </div>
             </section>
