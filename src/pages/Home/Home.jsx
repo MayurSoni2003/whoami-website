@@ -3,6 +3,7 @@ import axios from 'axios';
 import { getApiUrl } from '../../config';
 import Hero from '../../components/Hero/Hero';
 import ProductCarousel from '../../components/ProductCarousel/ProductCarousel';
+import FaqFolders from '../../components/FaqFolders/FaqFolders';
 import './Home.css';
 
 const Home = () => {
@@ -118,6 +119,9 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            {/* FAQ Folders Section */}
+            <FaqFolders />
         </div>
     );
 };

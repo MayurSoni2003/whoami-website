@@ -31,7 +31,6 @@ const Footer = () => {
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/products">Products</Link></li>
                             <li><Link to="/about">About</Link></li>
-                            <li><Link to="/faq">FAQ</Link></li>
                             {/* <li><Link to="/blog">Journal</Link></li> */}
                             <li><Link to="/contact">Contact</Link></li>
                         </ul>
@@ -53,6 +52,7 @@ const Footer = () => {
                         <h4 className="footer-heading">Connect</h4>
                         <ul className="footer-links">
                             <li><a href="mailto:studios.whoami@gmail.com">studios.whoami@gmail.com</a></li>
+                            <li><a href="tel:+919314065601">+91 93140 65601</a></li>
                             <li><a href="https://www.instagram.com/whoami.studios" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                             <li><a href="https://www.pinterest.com/studioswhoami/" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
                         </ul>
