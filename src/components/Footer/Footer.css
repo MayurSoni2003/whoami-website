@@ -16,6 +16,7 @@
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: var(--spacing-2xl);
     margin-bottom: var(--spacing-2xl);
+    /* align-items: stretch; */
 }
 
 /* Brand Column */
@@ -55,11 +56,17 @@
     margin: 0;
 }
 
-.footer-india,
-.footer-location {
+.footer-india {
     font-size: var(--font-size-xs);
     color: var(--color-text-muted);
     margin-top: var(--spacing-lg);
+    font-weight: var(--font-weight-medium);
+}
+
+.footer-location {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    margin-top: auto;
     font-weight: var(--font-weight-medium);
 }
 
@@ -67,6 +74,7 @@
 .footer-column {
     display: flex;
     flex-direction: column;
+    /* min-height: 220px; */
 }
 
 .footer-heading {
@@ -82,6 +90,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    /* flex-grow: 1; */
 }
 
 .footer-links li {
