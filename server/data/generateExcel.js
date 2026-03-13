@@ -146,42 +146,6 @@ const products = [
         ImageURL: 'https://placeholder-image-url.com/character-totem.jpg',
         Dimensions: '5cm x 3cm x 0.5cm (each)',
         Weight: '15g (each)'
-    },
-    {
-        ID: 13,
-        Name: 'Thunder Relic Paperweight',
-        Description: '3D-printed replica of a legendary hammer. Heavy enough to hold down your papers, symbolic enough to declare worthiness. Are you worthy? Your desk will answer.',
-        Price: 699,
-        Material: 'PLA Plastic with Metal Fill',
-        UseCase: 'Papers stay down. Thunder stays up. For those who wield responsibility with power.',
-        Category: 'Desk Accessories',
-        ImageURL: 'https://placeholder-image-url.com/thunder-relic.jpg',
-        Dimensions: '12cm x 8cm x 6cm',
-        Weight: '200g'
-    },
-    {
-        ID: 14,
-        Name: 'Winged Quest Desk Sculpture',
-        Description: '3D-printed golden sphere with delicate wings. Can be placed or hung. The hardest to catch, the most precious to hold. Seeker pride in tangible form.',
-        Price: 599,
-        Material: 'Gold PLA Plastic',
-        UseCase: 'For those who chase impossible things until they become real. Crafted in Jaipur.',
-        Category: 'Collectibles',
-        ImageURL: 'https://placeholder-image-url.com/winged-quest.jpg',
-        Dimensions: '8cm wingspan x 4cm',
-        Weight: '25g'
-    },
-    {
-        ID: 15,
-        Name: 'Universe Echo Quote Plaque',
-        Description: 'Laser-cut wooden plaque with your chosen quote from any universe. Wizarding world, superhero sagas, galactic epics, or your own words. Your philosophy, made permanent.',
-        Price: 749,
-        Material: 'Oak Wood',
-        UseCase: 'Words that define you, carved in wood. Personalized identity artifact. Crafted in Jaipur.',
-        Category: 'Gifts',
-        ImageURL: 'https://placeholder-image-url.com/universe-echo.jpg',
-        Dimensions: '25cm x 15cm x 1cm',
-        Weight: '180g'
     }
 ];
 
