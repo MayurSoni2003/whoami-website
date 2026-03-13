@@ -62,14 +62,13 @@ const Footer = () => {
                             <li><a href="https://www.instagram.com/whoami.studios" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                             <li><a href="https://www.pinterest.com/studioswhoami/" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
                         </ul>
-                        <p className="footer-location">Jaipur, India 🇮🇳</p>
                     </div>
                 </div>
 
                 {/* Copyright */}
                 <div className="footer-bottom">
                     <p className="footer-copyright">
-                        © {currentYear} WhoAmI. Designed and crafted with ❤️ in Jaipur for the quietly expressive.
+                        © {currentYear} WhoAmI. Designed and crafted with ❤️
                     </p>
                 </div>
             </div>
