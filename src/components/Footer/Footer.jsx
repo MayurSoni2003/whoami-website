@@ -8,6 +8,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-container container">
                 <div className="footer-grid">
+
                     {/* Brand Column */}
                     <div className="footer-column">
                         <div className="footer-brand-container">
@@ -31,7 +32,6 @@ const Footer = () => {
                             <li><Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Link></li>
                             <li><Link to="/products" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Products</Link></li>
                             <li><Link to="/about" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>About</Link></li>
-                            {/* <li><Link to="/blog">Journal</Link></li> */}
                             <li>
                                 <Link
                                     to="/contact"
@@ -40,17 +40,6 @@ const Footer = () => {
                                     Contact
                                 </Link>
                             </li>
-                        </ul>
-                    </div>
-
-                    {/* Worlds */}
-                    <div className="footer-column">
-                        <h4 className="footer-heading">Worlds</h4>
-                        <ul className="footer-links">
-                            <li><Link to="/products?category=Desk Accessories">Desk Artifacts</Link></li>
-                            <li><Link to="/products?category=Collectibles">Collectibles</Link></li>
-                            <li><Link to="/products?category=Gifts">Wearables & Gifts</Link></li>
-                            <li><Link to="/products?category=Puzzles">Puzzles & Games</Link></li>
                         </ul>
                     </div>
 
@@ -63,6 +52,7 @@ const Footer = () => {
                             <li><a href="https://www.pinterest.com/studioswhoami/" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
                         </ul>
                     </div>
+
                 </div>
 
                 {/* Copyright */}
